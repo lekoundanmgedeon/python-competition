@@ -1,2 +1,1 @@
-# python-competition-
 # python-competition
