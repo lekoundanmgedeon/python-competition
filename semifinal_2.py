@@ -13,9 +13,9 @@ def binary_search_recursive(lst, target, left, right, count=0):
         pass  # return index and count
     elif lst[mid] < target:
         count += 1
-        return binary_search_recursive(lst[mid],target,right)
+        return binary_search_recursive(lst[mid],target,left,right,count)
     else:
-        return binary_search_recursive(lst[mid],target,right)
+        return binary_search_recursive(lst[mid],target,left,right,count)
 
 lst = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 index, comparisons = binary_search_recursive(lst, 13, 0, len(lst) - 1)
